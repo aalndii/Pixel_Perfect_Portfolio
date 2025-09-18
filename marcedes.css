@@ -1,0 +1,131 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to bottom,rgb(255, 0, 0),rgb(235, 157, 135));
+    color: #000000;
+}
+/* navbar */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(48, 61, 245);
+    padding: 15px 30px;
+}
+.navbar h1 {
+padding: 0;
+margin: 0;
+}
+.navbar ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0 ;
+    padding: 0;
+flex-wrap: wrap;
+    color: black;
+
+}
+
+.navbar a{
+    text-decoration:none ;
+    font-weight: bold;
+    transition:  0.4s ease;
+    display: inline-block;
+}
+.navbar a:hover{
+
+    transform: scale(1.4);
+}
+/* selection title */
+.section-title{
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 20px 30px;
+}
+/* grid */
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px 30px;
+    justify-items: center;
+}
+.pro{
+    text-align: center;
+        background-color: rgba(255, 255, 255, 0.2);
+
+    padding: 15px;
+    border-radius: 40px;
+    transition: 0.3s ease;
+}
+/* تكبير الصورة عند التمرير */
+.pro:hover{
+transform: scale(1.1);
+}
+.pro img{
+    width: 100%;
+    max-width: 150px;
+    border-radius: 15px;
+    transition: 0.9s;
+}
+.pro img:hover{
+    transform: scale(1.9s);
+}
+.pro h3{
+    margin: 10px 0 8px;
+    }
+    .pro p{
+        font-size: 0.9rem;
+        color: brown;
+        font-weight: bold;
+    }
+    .buy{
+        display: block;
+        margin: 10px auto;
+        padding: 15px 40px;
+        font-size: 1.2rem;
+font-weight: bold;
+background-color: #000;
+color: red;
+border: none;
+border-radius: 14px;
+cursor: pointer;
+animation: pluse 1.5s infinite;
+    }
+    @keyframes pluse {
+        0% {transform: scale(1);}
+        50% {transform: scale(1.4);}
+       100% {transform: scale(1);}
+        
+    }
+    .buy:hover{
+        background: green;
+        color: white;
+    }
+    /* laptop (3 اعمدة) */
+    @media (max-width:1200px){
+        .grid {
+            grid-template-columns:repeat(3, 1fr );
+        }
+    }
+    /* ipad (2 عامود) */
+    @media(max-width:900px){
+        .grid{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    /* mobile(عامود واحد) */
+    @media (max-width:620px){
+.grid{
+    grid-template-columns: 1fr;
+}
+.navbar{
+    flex-direction: column;
+    align-items: flex-start;
+}
+.navbar ul{
+    flex-direction: column;
+    gap: 10px;
+}
+    }
