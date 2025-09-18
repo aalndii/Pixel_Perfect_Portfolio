@@ -112,7 +112,7 @@ text-align: center;
     }
 }
 
-@media (max-width:580px) {
+@media (max-width:410px) {
     .gridd{
         grid-template-columns: 1fr;
     }
@@ -125,3 +125,4 @@ text-align: center;
         gap: 15px;
     }
 }
+
