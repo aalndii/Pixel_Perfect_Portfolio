@@ -123,5 +123,9 @@ text-align: center;
         flex-direction: column;
         gap: 45px;
     }
+    .abo p{
+        margin-top:60px;
+    }
 }
+
 
