@@ -121,6 +121,7 @@ text-align: center;
     }
     .navbar ul{
         flex-direction: column;
-        gap: 15px;
+        gap: 45px;
     }
 }
+
