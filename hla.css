@@ -124,10 +124,11 @@ text-align: center;
         flex-direction: row;
         gap: 15px;
     }
-    .abo p{
-        margin-bottom:410px;
+    .abo{
+        margin-bottom:110px;
     }
 }
+
 
 
 
