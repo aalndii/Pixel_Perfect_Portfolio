@@ -121,13 +121,14 @@ text-align: center;
         flex-direction: column;
     }
     .navbar ul{
-        flex-direction: column;
+        flex-direction: row;
         gap: 15px;
     }
     .abo p{
-        margin-bottom:90px;
+        margin-bottom:1110px;
     }
 }
+
 
 
 
