@@ -6,6 +6,7 @@ body{
 }
 .navbar{
     width: 100%;
+    position: fixed;
     z-index: 5;
     display: flex;
     justify-content: space-between;
@@ -121,12 +122,13 @@ text-align: center;
     }
     .navbar ul{
         flex-direction: column;
-        gap: 45px;
+        gap: 15px;
     }
     .abo p{
         margin-bottom:90px;
     }
 }
+
 
 
 
